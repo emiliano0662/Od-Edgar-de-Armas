@@ -1,0 +1,71 @@
+.block-home-banner {
+
+    .swiper-container {
+
+        .swiper-slide {
+            min-height: 626px;
+            background-size: cover;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                min-height: 350px;
+            }
+
+            @include respond-to($phone-tablet) {
+                min-height: 350px;
+            }
+
+            @include respond-to($tablet-medium) {
+                min-height: 350px;
+            }
+
+            @include respond-to($medium-large) {
+                min-height: 350px;
+            }
+        }
+
+        .swiper-pagination {
+            width: 100%;
+            margin-top: -48px;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                margin-top: -25px;
+            }
+
+            @include respond-to($phone-tablet) {
+                margin-top: -25px;
+            }
+
+            @include respond-to($tablet-medium) {
+                margin-top: -25px;
+            }
+
+            @include respond-to($medium-large) {
+                margin-top: -25px;
+            }
+
+            .swiper-pagination-bullet {
+                width: 55px;
+                height: 5px;
+                margin: 0px 3px;
+                background-color: red;
+                cursor: pointer;
+
+                &:hover,
+                &.swiper-pagination-bullet-active {
+                    background-color: green;
+                }
+            }
+        }
+    }
+}
