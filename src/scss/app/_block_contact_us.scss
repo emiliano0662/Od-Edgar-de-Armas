@@ -7,18 +7,22 @@
         // Breakpoints
         @include respond-to($phone) {
             max-height: 200px;
+            margin-bottom: 30px;
         }
 
         @include respond-to($phone-tablet) {
             max-height: 200px;
+            margin-bottom: 30px;
         }
 
         @include respond-to($tablet-medium) {
             max-height: 200px;
+            margin-bottom: 30px;
         }
 
         @include respond-to($medium-large) {
             max-height: 200px;
+            margin-bottom: 30px;
         }
     }
 

@@ -14657,21 +14657,25 @@ footer p {
 @media only screen and (max-width: 479px) {
   .block-contact-us .img-fluid {
     max-height: 200px;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .block-contact-us .img-fluid {
     max-height: 200px;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 849px) {
   .block-contact-us .img-fluid {
     max-height: 200px;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (min-width: 850px) and (max-width: 990px) {
   .block-contact-us .img-fluid {
     max-height: 200px;
+    margin-bottom: 30px;
   }
 }
 .block-contact-us h3, .block-contact-us .h3 {
