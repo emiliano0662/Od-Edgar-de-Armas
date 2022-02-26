@@ -60,12 +60,16 @@
         }
 
         li {
-            margin-bottom: 15px;
+            padding: 0px 0px 15px 30px;
             letter-spacing: 0.49px;
             line-height: 20px;
             font-weight: 400;
             font-size: 17px;
             color: #FFFFFF;
+            background-color: transparent;
+            background-size: 20px auto;
+            background-position: left 3px;
+            background-repeat: no-repeat;
 
             // Breakpoints
             @include respond-to($phone) {
@@ -89,7 +93,7 @@
             }
 
             &:last-child {
-                margin-bottom: 0px;
+                padding-bottom: 0px;
             }
 
             a {
@@ -118,6 +122,10 @@
                 @include respond-to($medium-large) {
                     line-height: 20px;
                     font-size: 15px;
+                }
+
+                &:hover {
+                    text-decoration: underline !important;
                 }
             }
         }

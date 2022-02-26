@@ -14,7 +14,69 @@
 
 <body>
     <!--header-->
-    <header></header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="Image" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-column align-items-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item d-block d-lg-none">
+                            <a class="nav-link btn-target" href="#curriculum">Curriculum</a>
+                        </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <a class="nav-link btn-target" href="#preguntas-frecuentes">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <a class="nav-link btn-target" href="#descargar-formulario">Descargar Formulario</a>
+                        </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <a class="nav-link btn-target" href="#cargar-archivo">Cargar Archivo</a>
+                        </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <a class="nav-link btn-target" href="#noticias">Noticias</a>
+                        </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <a class="nav-link btn-target" href="#contactos">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><i class="lni lni-instagram"></i>Instagram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><i class="lni lni-comment"></i>WhatsApp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><i class="lni lni-map"></i>Como Llegar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link btn-target" href="#curriculum">Curriculum</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn-target" href="#preguntas-frecuentes">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn-target" href="#descargar-formulario">Descargar Formulario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn-target" href="#cargar-archivo">Cargar Archivo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn-target" href="#noticias">Noticias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn-target" href="#contactos">Contactos</a>
+            </li>
+        </ul>
+    </header>
     <!--Fin header-->
     <!--Bloque banner home-->
     <section class="block-home-banner">
@@ -95,7 +157,7 @@
     </section>
     <!--Fin bloque informacion general-->
     <!--Bloque curriculum-->
-    <section class="block-home-resume">
+    <section id="curriculum" class="block-home-resume">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-4 d-flex flex-column justify-content-start align-items-center pe-lg-4">
@@ -133,7 +195,7 @@
     </section>
     <!--Fin bloque curriculum-->
     <!--Bloque preguntas frecuentes-->
-    <section class="block-home-questions">
+    <section id="preguntas-frecuentes" class="block-home-questions">
         <div class="container-fluid p-0">
             <div class="row m-0">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center p-0">
@@ -200,39 +262,119 @@
         </div>
     </section>
     <!--Fin bloque preguntas frecuentes-->
-    <!--Bloque-->
-    <section class="block-">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex flex-column justify-content-start align-items-start">
-    
+    <!--Bloque pasos-->
+    <section class="block-home-steps">
+        <div id="descargar-formulario" class="container-download">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-7 d-flex flex-column justify-content-start align-items-start">
+                        <p>Por favor le pedimos que siga los siguientes pasos:</p>
+                        <ul>
+                            <li>1.- Descargue el archivo que se encuentre en el botón de <strong>descarga</strong>.</li>
+                            <li>2.- Rellene la información requerida</li>
+                            <li>3.- Escanee la planilla con la información solicitada en un formato jpg o pdf.</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-5 d-flex flex-column justify-content-center align-items-center align-items-lg-end mt-5 mt-lg-0">
+                        <a href="" target="_self" class="btn btn-primary">Descargar Formulario</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cargar-archivo" class="container-charge">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-7 d-flex flex-column justify-content-start align-items-start">
+                        <p>Una vez teniendo toda la información correspondiente introduzca los siguientes archivos en el link de <strong>carga</strong>:</p>
+                        <ul class="mb-4">
+                            <li>1.- Planilla con la informacion del paciente.</li>
+                            <li>2.- Comprobante de pago (de ser necesario).</li>
+                            <li>3.- Examenes Medicos adicionales.</li>
+                        </ul>
+                        <p class="mb-0">Una vez recibida su documentación, muestro personal se comunicará con usted en un lapso no mayor de 48 horas.</p>
+                    </div>
+                    <div class="col-12 col-lg-5 d-flex flex-column justify-content-center align-items-center align-items-lg-end mt-5 mt-lg-0">
+                        <a href="" target="_self" class="btn btn-primary">Cargar archivo</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Fin bloque-->
-    <!--Bloque-->
-    <section class="block-">
+    <!--Fin bloque pasos-->
+    <!--Bloque noticias-->
+    <section id="noticias" class="block-home-news">
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex flex-column justify-content-start align-items-start">
-    
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                    <h2>noticias</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 overflow-hidden">
+                    <div id="slider-news" class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="container-item">
+                                    <h3>titulo</h3>
+                                    <small>01/01/2022</small>
+                                    <div class="container-image" style="background-image: url('assets/img/CMCOM.png');"></div>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus recusandae nisi qui aperiam rem eaque dolorem iusto odit. Amet eligendi facilis vero, quae et aspernatur veniam ut harum autem saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit illo nostrum veritatis necessitatibus iusto recusandae, vel est odit excepturi fuga eligendi sunt sapiente quidem impedit veniam nulla sit voluptates! Quibusdam.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="container-item">
+                                    <h3>titulo</h3>
+                                    <small>01/01/2022</small>
+                                    <div class="container-image" style="background-image: url('assets/img/CMCOM.png');"></div>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus recusandae nisi qui aperiam rem eaque dolorem iusto odit. Amet eligendi facilis vero, quae et aspernatur veniam ut harum autem saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit illo nostrum veritatis necessitatibus iusto recusandae, vel est odit excepturi fuga eligendi sunt sapiente quidem impedit veniam nulla sit voluptates! Quibusdam.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="container-item">
+                                    <h3>titulo</h3>
+                                    <small>01/01/2022</small>
+                                    <div class="container-image" style="background-image: url('assets/img/CMCOM.png');"></div>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus recusandae nisi qui aperiam rem eaque dolorem iusto odit. Amet eligendi facilis vero, quae et aspernatur veniam ut harum autem saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit illo nostrum veritatis necessitatibus iusto recusandae, vel est odit excepturi fuga eligendi sunt sapiente quidem impedit veniam nulla sit voluptates! Quibusdam.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="container-item">
+                                    <h3>titulo</h3>
+                                    <small>01/01/2022</small>
+                                    <div class="container-image" style="background-image: url('assets/img/CMCOM.png');"></div>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus recusandae nisi qui aperiam rem eaque dolorem iusto odit. Amet eligendi facilis vero, quae et aspernatur veniam ut harum autem saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit illo nostrum veritatis necessitatibus iusto recusandae, vel est odit excepturi fuga eligendi sunt sapiente quidem impedit veniam nulla sit voluptates! Quibusdam.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="container-item">
+                                    <h3>titulo</h3>
+                                    <small>01/01/2022</small>
+                                    <div class="container-image" style="background-image: url('assets/img/CMCOM.png');"></div>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus recusandae nisi qui aperiam rem eaque dolorem iusto odit. Amet eligendi facilis vero, quae et aspernatur veniam ut harum autem saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit illo nostrum veritatis necessitatibus iusto recusandae, vel est odit excepturi fuga eligendi sunt sapiente quidem impedit veniam nulla sit voluptates! Quibusdam.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-btn-news">
+                        <button class="btn-news swiper-button prev" data-item="true"><i class="lni lni-chevron-left"></i></button>
+                        <button class="btn-news swiper-button next" data-item="false"><i class="lni lni-chevron-right"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Fin bloque-->
+    <!--Fin bloque noticias-->
     <!--Bloque contactanos-->
-    <section class="block-contact-us">
+    <section id="contactos" class="block-contact-us">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-4 d-flex flex-column justify-content-start align-items-center pe-lg-4">
                     <img src="assets/img/logo-footer.png" alt="Image" class="img-fluid">
                     <h3>contactános</h3>
                     <ul>
-                        <li><a href="mailto:eldearmas@dredgarldearmas.com" target="_self">eldearmas@dredgarldearmas.com</a></li>
-                        <li><a href="tel:+584129893934" target="_self">+58 412 989 3934</a></li>
-                        <li>Avenida Intercomunal La Trinidad, El Hatillo, Apartado Postal 80474 Caracas, Venezuela 1080</li>
+                        <li style="background-image: url('assets/img/icon-mail.jpg');"><a href="mailto:eldearmas@dredgarldearmas.com" target="_self">eldearmas@dredgarldearmas.com</a></li>
+                        <li style="background-image: url('assets/img/icon-phone.jpg');"><a href="tel:+584129893934" target="_self">+58 412 989 3934</a></li>
+                        <li style="background-image: url('assets/img/icon-location.jpg');">Avenida Intercomunal La Trinidad, El Hatillo, Apartado Postal 80474 Caracas, Venezuela 1080</li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-8 d-flex flex-column justify-content-start align-items-start ps-lg-4">
@@ -243,7 +385,15 @@
     </section>
     <!--Fin bloque contactanos-->
     <!--footer-->
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                    <p>Copyright &copy; All right reserved 2022<br>Developed by Group Nido</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!--Fin footer-->
     <script type="text/javascript" src="assets/js/bundle.min.js"></script>
 </body>

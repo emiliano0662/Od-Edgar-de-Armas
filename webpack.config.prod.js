@@ -13,7 +13,7 @@ module.exports = {
     },
     devtool: false,
     devServer: {
-        contentBase: path.join(__dirname, './public'),
+        static: path.join(__dirname, './public'),
         port: 4000,
         open: true
     },

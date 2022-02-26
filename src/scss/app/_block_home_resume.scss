@@ -168,6 +168,27 @@
             bottom: 0px;
             background-color: #FFFFFF;
             content: '';
+
+            // Breakpoints
+            @include respond-to($phone) {
+                width: 100%;
+                left: 0px;
+            }
+
+            @include respond-to($phone-tablet) {
+                width: 100%;
+                left: 0px;
+            }
+
+            @include respond-to($tablet-medium) {
+                width: 100%;
+                left: 0px;
+            }
+
+            @include respond-to($medium-large) {
+                width: 100%;
+                left: 0px;
+            }
         }
 
         .item {

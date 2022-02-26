@@ -1,6 +1,6 @@
 footer {
     padding: 35px 0px;
-    background-color: #3b65d6;
+    background-color: $color-secondary;
 
     // Breakpoints
     @include respond-to($phone) {
