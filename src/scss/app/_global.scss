@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+@font-face {
+    font-family: 'Avenir Book';
+    src: url('../fonts/avenir-book/Avenir-Book.woff2') format('woff2'),
+        url('../fonts/avenir-book/Avenir-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 * {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Avenir Book';
     font-weight: 400;
     font-size: 17px;
     box-shadow: none !important;
@@ -23,7 +30,7 @@ html {
 body {
     position: relative;
     overflow: hidden;
-    background: #FFFFFF;
+    background: #000000;
 }
 
 header,
@@ -36,13 +43,14 @@ section {
 
 /*Título*/
 h1 {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    font-style: italic;
     letter-spacing: 0;
-    line-height: 65px;
+    line-height: 55px;
     font-weight: 700;
-    font-size: 65px;
-    color: #FFFFFF;
+    font-size: 55px;
+    color: #489dca;
 
     // Breakpoints
     @include respond-to($phone) {
@@ -66,12 +74,44 @@ h1 {
     }
 }
 
+h2 {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 0;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 50px;
+    color: #489dca;
+
+    // Breakpoints
+    @include respond-to($phone) {
+        line-height: 40px;
+        font-size: 40px;
+    }
+
+    @include respond-to($phone-tablet) {
+        line-height: 40px;
+        font-size: 40px;
+    }
+
+    @include respond-to($tablet-medium) {
+        line-height: 40px;
+        font-size: 40px;
+    }
+
+    @include respond-to($medium-large) {
+        line-height: 40px;
+        font-size: 40px;
+    }
+}
+
 /*Parrafos*/
 p {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     letter-spacing: 0.49px;
     line-height: 20px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 17px;
     color: #FFFFFF;
 
@@ -94,35 +134,6 @@ p {
     @include respond-to($medium-large) {
         line-height: 20px;
         font-size: 15px;
-    }
-
-    b {
-        letter-spacing: 0.49px;
-        line-height: 20px;
-        font-weight: 700;
-        font-size: 17px;
-        color: #FFFFFF;
-
-        // Breakpoints
-        @include respond-to($phone) {
-            line-height: 20px;
-            font-size: 15px;
-        }
-
-        @include respond-to($phone-tablet) {
-            line-height: 20px;
-            font-size: 15px;
-        }
-
-        @include respond-to($tablet-medium) {
-            line-height: 20px;
-            font-size: 15px;
-        }
-
-        @include respond-to($medium-large) {
-            line-height: 20px;
-            font-size: 15px;
-        }
     }
 }
 
@@ -165,7 +176,7 @@ p {
 .container-image {
     width: 100%;
     height: 100%;
-    min-height: 350px;
+    min-height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: transparent;

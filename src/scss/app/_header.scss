@@ -1,12 +1,190 @@
 header {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 99999;
 
     .navbar {
-        background-color: #E42313 !important;
+        padding: 15px 0px;
+        background-color: rgba(0, 0, 0, 0.7) !important;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            padding: 10px 0px;
+        }
+
+        @include respond-to($phone-tablet) {
+            padding: 10px 0px;
+        }
+
+        @include respond-to($tablet-medium) {
+            padding: 10px 0px;
+        }
+
+        @include respond-to($medium-large) {
+            padding: 10px 0px;
+        }
+
+        .navbar-toggler {
+            background-color: #FFFFFF;
+        }
 
         .navbar-brand {
+            padding: 0px;
 
             .img-fluid {
                 max-height: 76px;
+
+                // Breakpoints
+                @include respond-to($phone) {
+                    max-height: 40px;
+                }
+
+                @include respond-to($phone-tablet) {
+                    max-height: 50px;
+                }
+
+                @include respond-to($tablet-medium) {
+                    max-height: 50px;
+                }
+
+                @include respond-to($medium-large) {
+                    max-height: 50px;
+                }
+            }
+        }
+
+        .navbar-collapse {
+
+            .navbar-nav {
+
+                // Breakpoints
+                @include respond-to($phone) {
+                    padding-top: 15px;
+                    padding-bottom: 5px;
+                }
+
+                @include respond-to($phone-tablet) {
+                    padding-top: 15px;
+                    padding-bottom: 5px;
+                }
+
+                @include respond-to($tablet-medium) {
+                    padding-top: 15px;
+                    padding-bottom: 5px;
+                }
+
+                @include respond-to($medium-large) {
+                    padding-top: 15px;
+                    padding-bottom: 5px;
+                }
+
+                .nav-item {
+                    margin-right: 50px;
+
+                    // Breakpoints
+                    @include respond-to($phone) {
+                        margin-right: 0px;
+                        margin-bottom: 15px;
+                    }
+
+                    @include respond-to($phone-tablet) {
+                        margin-right: 0px;
+                        margin-bottom: 15px;
+                    }
+
+                    @include respond-to($tablet-medium) {
+                        margin-right: 0px;
+                        margin-bottom: 15px;
+                    }
+
+                    @include respond-to($medium-large) {
+                        margin-right: 0px;
+                        margin-bottom: 15px;
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+
+                        // Breakpoints
+                        @include respond-to($phone) {
+                            margin-bottom: 0px;
+                        }
+
+                        @include respond-to($phone-tablet) {
+                            margin-bottom: 0px;
+                        }
+
+                        @include respond-to($tablet-medium) {
+                            margin-bottom: 0px;
+                        }
+
+                        @include respond-to($medium-large) {
+                            margin-bottom: 0px;
+                        }
+                    }
+
+                    .nav-link {
+                        padding: 0px;
+                        line-height: 20px;
+                        font-size: 16px;
+                        color: #FFFFFF;
+
+                        &:hover {
+                            text-decoration: underline !important;
+                        }
+
+                        .lni {
+                            margin-right: 8px;
+                            line-height: 18px;
+                            font-size: 14px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nav {
+        width: 100%;
+        max-width: 350px;
+        height: 618px;
+        padding: 60px 0px 15px 0px;
+        background-color: #000000;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            height: 280px;
+            display: none;
+        }
+
+        @include respond-to($phone-tablet) {
+            height: 280px;
+            display: none;
+        }
+
+        @include respond-to($tablet-medium) {
+            height: 280px;
+            display: none;
+        }
+
+        @include respond-to($medium-large) {
+            height: 280px;
+            display: none;
+        }
+
+        .nav-item {
+
+            .nav-link {
+                padding: 15px 15px 15px 60px;
+                line-height: 26px;
+                font-size: 22px;
+                color: #FFFFFF;
+
+                &:hover {
+                    background-color: #3b65d6;
+                }
             }
         }
     }

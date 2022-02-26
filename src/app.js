@@ -3,8 +3,8 @@ import 'bootstrap';
 
 import { WOW } from 'wowjs';
 
-import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
-Swiper.use([Autoplay, Navigation, Pagination]);
+import Swiper, { Autoplay } from 'swiper';
+Swiper.use([Autoplay]);
 
 /*Se inicializa el plugin para las animaciones*/
 var wow = new WOW({
@@ -25,15 +25,6 @@ if ($.contains(document.body, document.getElementById('slider-home-banner'))) {
         spaceBetween: 0,
         autoplay: {
             delay: 5000,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
         }
     });
 }

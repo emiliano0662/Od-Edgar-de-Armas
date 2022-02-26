@@ -3,7 +3,7 @@
     .swiper-container {
 
         .swiper-slide {
-            min-height: 626px;
+            min-height: 725px;
             background-size: cover;
             background-color: transparent;
             background-repeat: no-repeat;
@@ -26,46 +26,36 @@
                 min-height: 350px;
             }
         }
+    }
 
-        .swiper-pagination {
-            width: 100%;
-            margin-top: -48px;
-            position: absolute;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            z-index: 1;
+    .container-banner {
+        width: 100%;
+        padding: 45px 0px;
+        background-color: #3b65d6;
 
-            // Breakpoints
-            @include respond-to($phone) {
-                margin-top: -25px;
-            }
+        // Breakpoints
+        @include respond-to($phone) {
+            padding: 30px 0px;
+        }
 
-            @include respond-to($phone-tablet) {
-                margin-top: -25px;
-            }
+        @include respond-to($phone-tablet) {
+            padding: 30px 0px;
+        }
 
-            @include respond-to($tablet-medium) {
-                margin-top: -25px;
-            }
+        @include respond-to($tablet-medium) {
+            padding: 30px 0px;
+        }
 
-            @include respond-to($medium-large) {
-                margin-top: -25px;
-            }
+        @include respond-to($medium-large) {
+            padding: 30px 0px;
+        }
 
-            .swiper-pagination-bullet {
-                width: 55px;
-                height: 5px;
-                margin: 0px 3px;
-                background-color: red;
-                cursor: pointer;
-
-                &:hover,
-                &.swiper-pagination-bullet-active {
-                    background-color: green;
-                }
-            }
+        p {
+            margin: 0px;
+            text-align: center;
+            line-height: 29px;
+            font-size: 25px;
+            color: #FFFFFF;
         }
     }
 }

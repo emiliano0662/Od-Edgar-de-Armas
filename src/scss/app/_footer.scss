@@ -1,1 +1,50 @@
-footer {}
+footer {
+    padding: 35px 0px;
+    background-color: #3b65d6;
+
+    // Breakpoints
+    @include respond-to($phone) {
+        padding: 30px 0px;
+    }
+
+    @include respond-to($phone-tablet) {
+        padding: 30px 0px;
+    }
+
+    @include respond-to($tablet-medium) {
+        padding: 30px 0px;
+    }
+
+    @include respond-to($medium-large) {
+        padding: 30px 0px;
+    }
+
+    p {
+        margin: 0px;
+        text-align: center;
+        line-height: 24px;
+        font-size: 20px;
+        color: #FFFFFF;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            line-height: 19px;
+            font-size: 15px;
+        }
+
+        @include respond-to($phone-tablet) {
+            line-height: 19px;
+            font-size: 15px;
+        }
+
+        @include respond-to($tablet-medium) {
+            line-height: 19px;
+            font-size: 15px;
+        }
+
+        @include respond-to($medium-large) {
+            line-height: 19px;
+            font-size: 15px;
+        }
+    }
+}

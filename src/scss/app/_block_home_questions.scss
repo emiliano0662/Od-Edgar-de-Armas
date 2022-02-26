@@ -1,0 +1,127 @@
+.block-home-questions {
+    padding: 0px 0px 60px 0px;
+
+    h2 {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    .accordion {
+        width: 100%;
+
+        .accordion-item {
+            border: none;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            border-radius: 0px;
+            background-color: #231f20;
+
+            h2 {
+                margin-bottom: 0px;
+                background-color: transparent;
+
+                .accordion-button {
+                    padding: 17px 0px;
+                    letter-spacing: 0;
+                    line-height: 34px;
+                    font-weight: 300;
+                    font-size: 24px;
+                    color: #3b65d6;
+                    background-color: transparent;
+
+                    // Breakpoints
+                    @include respond-to($phone) {
+                        line-height: 24px;
+                        font-size: 16px;
+                    }
+
+                    @include respond-to($phone-tablet) {
+                        line-height: 24px;
+                        font-size: 16px;
+                    }
+
+                    @include respond-to($tablet-medium) {
+                        line-height: 24px;
+                        font-size: 16px;
+                    }
+
+                    @include respond-to($medium-large) {
+                        line-height: 24px;
+                        font-size: 16px;
+                    }
+
+                    &::after {
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                    }
+                }
+            }
+
+            .accordion-body {
+                padding: 0px 0px 17px 0px;
+                background-color: transparent;
+
+                ul {
+                    width: 100%;
+                    padding-left: 45px;
+                    margin-bottom: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    // Breakpoints
+                    @include respond-to($phone) {
+                        padding-left: 15px;
+                    }
+
+                    @include respond-to($phone-tablet) {
+                        padding-left: 15px;
+                    }
+
+                    @include respond-to($tablet-medium) {
+                        padding-left: 15px;
+                    }
+
+                    @include respond-to($medium-large) {
+                        padding-left: 15px;
+                    }
+
+                    li {
+                        margin-bottom: 15px;
+                        color: #FFFFFF;
+
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+
+                        p {
+                            padding-left: 40px;
+                            color: #FFFFFF;
+
+                            // Breakpoints
+                            @include respond-to($phone) {
+                                padding-left: 15px;
+                            }
+
+                            @include respond-to($phone-tablet) {
+                                padding-left: 15px;
+                            }
+
+                            @include respond-to($tablet-medium) {
+                                padding-left: 15px;
+                            }
+
+                            @include respond-to($medium-large) {
+                                padding-left: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(2n) {
+                background-color: transparent !important;
+            }
+        }
+    }
+}
