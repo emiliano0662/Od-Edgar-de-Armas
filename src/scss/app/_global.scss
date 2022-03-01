@@ -206,3 +206,16 @@ p {
     z-index: 99999;
     display: none;
 }
+
+#on-load-page-send {
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 3px 15px;
+    position: fixed;
+    text-align: center;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    z-index: 999999;
+}

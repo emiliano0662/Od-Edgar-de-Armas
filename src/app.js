@@ -59,9 +59,22 @@ $(document).on('click', '.btn-target', function (event) {
     $('html').animate({ scrollTop: $(item).offset().top - 50 }, 1000);
 });
 
-$("#form-upload-files").on('submit', function (e) {
+var submit_value = false;
+$("#form-upload-files").on('submit', function (event) {
+    if (!submit_value)
+        event.preventDefault();
+
     $('#on-load-page').fadeIn();
+
+    setTimeout(function () {
+        submit_value = true;
+        $("#form-upload-files").submit();
+    }, 1000);
 });
+
+setTimeout(function () {
+    $("#on-load-page-send").fadeOut();
+}, 5000);
 
 /*Se agregan las animaciones para toda la pagina que no cargan de menera recurrente*/
 wow.init();
