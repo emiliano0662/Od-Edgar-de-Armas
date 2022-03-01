@@ -502,18 +502,18 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="" method="post">
+                    <form id="form-upload-files" action="" method="POST" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col-12 mb-3">
-                                <input type="text" class="form-control" placeholder="Nombre">
+                                <input type="text" class="form-control" placeholder="Nombre" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 col-lg-6 mb-3">
-                                <input type="text" class="form-control" placeholder="Teléfono">
+                                <input type="text" class="form-control" placeholder="Teléfono" required>
                             </div>
                             <div class="col-12 col-lg-6 mb-3">
-                                <input type="email" class="form-control" placeholder="E-mail">
+                                <input type="email" class="form-control" placeholder="E-mail" required>
                             </div>
                         </div>
                         <div class="row">
@@ -542,7 +542,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success">Enviar</button>
+                    <button type="submit" class="btn btn-success" form="form-upload-files">Enviar</button>
                 </div>
             </div>
         </div>
@@ -557,6 +557,7 @@
             </div>
         </div>
     </footer>
+    <div id="on-load-page"></div>
     <!--Fin footer-->
     <script type="text/javascript" src="assets/js/bundle.min.js"></script>
 </body>

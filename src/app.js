@@ -59,5 +59,9 @@ $(document).on('click', '.btn-target', function (event) {
     $('html').animate({ scrollTop: $(item).offset().top - 50 }, 1000);
 });
 
+$("#form-upload-files").on('submit', function (e) {
+    $('#on-load-page').fadeIn();
+});
+
 /*Se agregan las animaciones para toda la pagina que no cargan de menera recurrente*/
 wow.init();
