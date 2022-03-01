@@ -182,95 +182,16 @@ p {
     background-position: center center;
 }
 
-/*formulario*/
-form {
-    width: 100%;
+.modal-dialog {
 
-    .form-control {
-        height: auto;
-        padding: 20px 15px;
-        letter-spacing: 0.4px;
-        line-height: 19px;
-        font-size: 14px;
-        color: $color-secondary;
-        border: none;
-        background-color: #FFFFFF;
-        -webkit-border-radius: 0px;
-        -moz-border-radius: 0px;
-        border-radius: 0px;
-        box-shadow: none;
-        outline: 0px;
+    .modal-content {
 
-        &::-webkit-input-placeholder {
-            letter-spacing: 0.4px;
-            line-height: 19px;
-            font-size: 14px;
-            color: $color-secondary;
+        .modal-header {
+            padding: 10px 15px;
         }
 
-        &:-ms-input-placeholder {
-            letter-spacing: 0.4px;
-            line-height: 19px;
-            font-size: 14px;
-            color: $color-secondary;
-        }
-
-        &::placeholder {
-            letter-spacing: 0.4px;
-            line-height: 19px;
-            font-size: 14px;
-            color: $color-secondary;
-        }
-    }
-
-    .form-select {
-        height: auto;
-        padding: 20px 15px;
-        letter-spacing: 0.4px;
-        line-height: 19px;
-        font-size: 14px;
-        color: $color-secondary;
-        border: none;
-        background-color: #FFFFFF;
-        -webkit-border-radius: 0px;
-        -moz-border-radius: 0px;
-        border-radius: 0px;
-        box-shadow: none;
-        outline: 0px;
-
-        optgroup {
-            font-style:normal;
-            font-weight:normal;
-            letter-spacing: 0.37px;
-            line-height: 18px;
-            font-weight: 700;
-            font-size: 13px;
-            color: $color-primary;
-
-            option {
-                letter-spacing: 0.37px;
-                line-height: 18px;
-                font-size: 13px;
-                color: $color-primary;
-            }
-        }
-    }
-
-    .form-check {
-
-        .form-check-label {
-            letter-spacing: 0.37px;
-            line-height: 18px;
-            font-size: 13px;
-            color: $color-secondary;
-
-            a {
-                text-decoration: underline !important;
-                letter-spacing: 0.37px;
-                line-height: 18px;
-                font-size: 13px;
-                color: $color-secondary;
-            }
+        .modal-footer {
+            padding: 10px 15px;
         }
     }
 }
