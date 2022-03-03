@@ -72,6 +72,7 @@
                     align-items: flex-start;
 
                     h3 {
+                        width: 100%;
                         margin-bottom: 25px;
                         text-transform: uppercase;
                         font-style: italic;
@@ -79,6 +80,9 @@
                         font-weight: 700;
                         font-size: 30px;
                         color: $color-secondary;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
                     }
 
                     small {
@@ -118,6 +122,10 @@
                     .container-image {
                         min-height: 400px;
                         margin-bottom: 25px;
+                        background-size: 64px auto, cover;
+                        background-repeat: no-repeat, no-repeat;
+                        background-color: transparent, transparent;
+                        background-position: center center, center center;
 
                         // Breakpoints
                         @include respond-to($phone) {
