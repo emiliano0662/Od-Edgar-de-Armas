@@ -130,22 +130,18 @@
                         // Breakpoints
                         @include respond-to($phone) {
                             min-height: 250px;
-                            background-size: contain;
                         }
 
                         @include respond-to($phone-tablet) {
                             min-height: 250px;
-                            background-size: contain;
                         }
 
                         @include respond-to($tablet-medium) {
                             min-height: 250px;
-                            background-size: contain;
                         }
 
                         @include respond-to($medium-large) {
                             min-height: 250px;
-                            background-size: contain;
                         }
                     }
                 }
