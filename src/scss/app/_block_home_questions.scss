@@ -4,6 +4,50 @@
     h2 {
         margin-bottom: 60px;
         text-align: center;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            margin-bottom: 40px;
+        }
+
+        @include respond-to($phone-tablet) {
+            margin-bottom: 40px;
+        }
+
+        @include respond-to($tablet-medium) {
+            margin-bottom: 40px;
+        }
+
+        @include respond-to($medium-large) {
+            margin-bottom: 40px;
+        }
+    }
+
+    .container-image {
+        width: 100%;
+        height: 700px;
+        margin-bottom: 60px;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            height: 250px;
+            margin-bottom: 40px;
+        }
+
+        @include respond-to($phone-tablet) {
+            height: 250px;
+            margin-bottom: 40px;
+        }
+
+        @include respond-to($tablet-medium) {
+            height: 250px;
+            margin-bottom: 40px;
+        }
+
+        @include respond-to($medium-large) {
+            height: 250px;
+            margin-bottom: 40px;
+        }
     }
 
     .accordion {

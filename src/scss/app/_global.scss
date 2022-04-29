@@ -219,3 +219,49 @@ p {
     border-radius: 0px;
     z-index: 999999;
 }
+
+/*Formularios*/
+.form-type-two {
+
+    .form-control {
+        height: auto;
+        padding: 20px 12px 10px 12px;
+        letter-spacing: -0.21px;
+        line-height: 25px;
+        font-weight: 400;
+        font-size: 20px;
+        color: #FFFFFF;
+        border: none;
+        background-color: #333333;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+
+        &::-webkit-input-placeholder {
+            text-transform: uppercase;
+            letter-spacing: -0.21px;
+            line-height: 25px;
+            font-weight: 400;
+            font-size: 20px;
+            color: #bebebe;
+        }
+
+        &:-ms-input-placeholder {
+            text-transform: uppercase;
+            letter-spacing: -0.21px;
+            line-height: 25px;
+            font-weight: 400;
+            font-size: 20px;
+            color: #bebebe;
+        }
+
+        &::placeholder {
+            text-transform: uppercase;
+            letter-spacing: -0.21px;
+            line-height: 25px;
+            font-weight: 400;
+            font-size: 20px;
+            color: #bebebe;
+        }
+    }
+}

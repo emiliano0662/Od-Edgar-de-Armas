@@ -1,21 +1,21 @@
 .block-home-general-information {
-    padding: 75px 0px;
+    padding: 75px 0px 0px 0px;
 
     // Breakpoints
     @include respond-to($phone) {
-        padding: 60px 0px 40px 0px;
+        padding: 60px 0px 0px 0px;
     }
 
     @include respond-to($phone-tablet) {
-        padding: 60px 0px 40px 0px;
+        padding: 60px 0px 0px 0px;
     }
 
     @include respond-to($tablet-medium) {
-        padding: 60px 0px 40px 0px;
+        padding: 60px 0px 0px 0px;
     }
 
     @include respond-to($medium-large) {
-        padding: 60px 0px 40px 0px;
+        padding: 60px 0px 0px 0px;
     }
 
     h1 {
@@ -113,7 +113,24 @@
 
     p {
         text-align: justify;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            margin-bottom: 40px;
+        }
+
+        @include respond-to($phone-tablet) {
+            margin-bottom: 40px;
+        }
+
+        @include respond-to($tablet-medium) {
+            margin-bottom: 40px;
+        }
+
+        @include respond-to($medium-large) {
+            margin-bottom: 40px;
+        }
     }
 
     .img-fluid {

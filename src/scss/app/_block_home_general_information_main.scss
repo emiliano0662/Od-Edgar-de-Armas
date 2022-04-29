@@ -1,0 +1,69 @@
+.block-home-general-information-main {
+
+    h1 {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    p {
+        margin-bottom: 60px;
+        letter-spacing: 0.49px;
+        line-height: 26px;
+        font-weight: 400;
+        font-size: 22px;
+        color: #FFFFFF;
+    }
+
+    hr {
+        width: 100%;
+        margin: 0px 0px 60px 0px;
+        border: none;
+        border-bottom: 1px solid #FFF;
+        opacity: 1;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            margin-bottom: 45px;
+        }
+
+        @include respond-to($phone-tablet) {
+            margin-bottom: 45px;
+        }
+
+        @include respond-to($tablet-medium) {
+            margin-bottom: 45px;
+        }
+
+        @include respond-to($medium-large) {
+            margin-bottom: 45px;
+        }
+    }
+
+    .container-image {
+        width: 100%;
+        height: 700px;
+        margin-bottom: 60px;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            height: 250px;
+            margin-bottom: 40px;
+        }
+
+        @include respond-to($phone-tablet) {
+            height: 250px;
+            margin-bottom: 40px;
+        }
+
+        @include respond-to($tablet-medium) {
+            height: 250px;
+            margin-bottom: 40px;
+        }
+
+        @include respond-to($medium-large) {
+            height: 250px;
+            margin-bottom: 40px;
+        }
+    }
+}

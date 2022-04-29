@@ -3,8 +3,8 @@ import 'bootstrap';
 
 import { WOW } from 'wowjs';
 
-import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
-Swiper.use([Autoplay, Navigation, Pagination]);
+import Swiper, { Autoplay } from 'swiper';
+Swiper.use([Autoplay]);
 
 /*Se inicializa el plugin para las animaciones*/
 var wow = new WOW({
@@ -15,7 +15,19 @@ var wow = new WOW({
 /*Script para el slider banner*/
 if ($.contains(document.body, document.getElementById('slider-home-banner'))) {
 
-    var mySwiperOurBeliefs = new Swiper('#slider-home-banner', {
+    new Swiper('#slider-home-banner', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        autoplay: {
+            delay: 5000,
+        }
+    });
+}
+
+if ($.contains(document.body, document.getElementById('slider-patient-care'))) {
+
+    new Swiper('#slider-patient-care', {
         loop: true,
         slidesPerView: 1,
         spaceBetween: 0,
