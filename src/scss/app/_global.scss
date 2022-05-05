@@ -109,6 +109,7 @@ h2 {
 /*Parrafos*/
 p {
     margin-bottom: 0px;
+    text-indent: 30px;
     letter-spacing: 0.49px;
     line-height: 20px;
     font-weight: 400;
@@ -230,9 +231,9 @@ p {
         line-height: 25px;
         font-weight: 400;
         font-size: 20px;
-        color: #FFFFFF;
+        color: #000000;
         border: none;
-        background-color: #333333;
+        background-color: #FFFFFF;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
@@ -243,7 +244,7 @@ p {
             line-height: 25px;
             font-weight: 400;
             font-size: 20px;
-            color: #bebebe;
+            color: #000000;
         }
 
         &:-ms-input-placeholder {
@@ -252,7 +253,7 @@ p {
             line-height: 25px;
             font-weight: 400;
             font-size: 20px;
-            color: #bebebe;
+            color: #000000;
         }
 
         &::placeholder {
@@ -261,7 +262,7 @@ p {
             line-height: 25px;
             font-weight: 400;
             font-size: 20px;
-            color: #bebebe;
+            color: #000000;
         }
     }
 }
